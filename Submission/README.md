@@ -44,5 +44,3 @@ The adapter README records PEFT 0.21.2, TRL 1.17.1, Transformers 5.22.2, PyTorch
 - The local dataset card lists CC-BY-NC-SA 4.0 and describes both synthetic Gulf Coast examples and real transcribed ATC exchanges. Check each upstream source's terms before redistributing any data or derivatives.
 - The Tiny Aya base model is subject to its own license and acceptable-use terms. A public adapter repository would still need to comply with those terms.
 - Evaluation logs include prompts and generated text; TensorBoard event files may include local environment metadata. Review and sanitize artifacts before any public release.
-
-See [`HF_COLLECTIONS.md`](./HF_COLLECTIONS.md) for the proposed Hub asset organization and current publication status.
