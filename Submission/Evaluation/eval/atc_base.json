@@ -1,0 +1,779 @@
+{
+  "run_id": "7adb04ff0b43870c",
+  "fingerprint": "7adb04ff0b43870c",
+  "headline": {
+    "f1_score": 0.16746940636719804,
+    "bleu": 2.629183192338715e-05,
+    "rouge_l": 0.09116713352007469,
+    "chrf": 0.18456833480927137,
+    "wer": 0.0,
+    "levenshtein": 0.20279418237502478,
+    "exact_match": 0.0,
+    "critical_token_recall": 0.2966666666666667,
+    "phraseology_match": 0.11666666666666665,
+    "length_ratio": 0.523997668997669
+  },
+  "stats": {
+    "f1_score": {
+      "name": "f1_score",
+      "count": 5,
+      "mean": 0.16746940636719804,
+      "stderr": 0.020267690694917538,
+      "std": 0.04531993414077557,
+      "min": 0.11428571428571427,
+      "max": 0.23809523809523805,
+      "values": [
+        0.18604651162790697,
+        0.23809523809523805,
+        0.1764705882352941,
+        0.12244897959183672,
+        0.11428571428571427
+      ]
+    },
+    "bleu": {
+      "name": "bleu",
+      "count": 5,
+      "mean": 2.629183192338715e-05,
+      "stderr": 2.3466212063217256e-05,
+      "std": 5.247204534777938e-05,
+      "min": 6.06530659712634e-13,
+      "max": 0.0001312357810004856,
+      "values": [
+        2.2277604606094128e-07,
+        0.0001312357810004856,
+        6.009638585283719e-10,
+        1.000000000000001e-12,
+        6.06530659712634e-13
+      ]
+    },
+    "rouge_l": {
+      "name": "rouge_l",
+      "count": 5,
+      "mean": 0.09116713352007469,
+      "stderr": 0.036751626384147036,
+      "std": 0.08217913487862757,
+      "min": 0.0,
+      "max": 0.19047619047619047,
+      "values": [
+        0.08888888888888889,
+        0.19047619047619047,
+        0.1764705882352941,
+        0.0,
+        0.0
+      ]
+    },
+    "chrf": {
+      "name": "chrf",
+      "count": 5,
+      "mean": 0.18456833480927137,
+      "stderr": 0.024566046861693953,
+      "std": 0.05493135072119306,
+      "min": 0.1338491500614454,
+      "max": 0.2605852725153971,
+      "values": [
+        0.2605852725153971,
+        0.24115377406650718,
+        0.15316391388430775,
+        0.1338491500614454,
+        0.13408956351869944
+      ]
+    },
+    "wer": {
+      "name": "wer",
+      "count": 5,
+      "mean": 0.0,
+      "stderr": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "levenshtein": {
+      "name": "levenshtein",
+      "count": 5,
+      "mean": 0.20279418237502478,
+      "stderr": 0.02123538232011379,
+      "std": 0.04748375839597164,
+      "min": 0.14375000000000004,
+      "max": 0.2791878172588832,
+      "values": [
+        0.2791878172588832,
+        0.22033898305084743,
+        0.20809248554913296,
+        0.16260162601626016,
+        0.14375000000000004
+      ]
+    },
+    "exact_match": {
+      "name": "exact_match",
+      "count": 5,
+      "mean": 0.0,
+      "stderr": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "critical_token_recall": {
+      "name": "critical_token_recall",
+      "count": 5,
+      "mean": 0.2966666666666667,
+      "stderr": 0.15058404814440193,
+      "std": 0.3367161679779838,
+      "min": 0.0,
+      "max": 0.8,
+      "values": [
+        0.0,
+        0.8,
+        0.0,
+        0.6,
+        0.08333333333333333
+      ]
+    },
+    "phraseology_match": {
+      "name": "phraseology_match",
+      "count": 5,
+      "mean": 0.11666666666666665,
+      "stderr": 0.0649786289653931,
+      "std": 0.1452966314513558,
+      "min": 0.0,
+      "max": 0.3333333333333333,
+      "values": [
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.3333333333333333
+      ]
+    },
+    "length_ratio": {
+      "name": "length_ratio",
+      "count": 5,
+      "mean": 0.523997668997669,
+      "stderr": 0.09444721578113373,
+      "std": 0.2111903947722059,
+      "min": 0.3076923076923077,
+      "max": 0.9090909090909091,
+      "values": [
+        0.5666666666666667,
+        0.375,
+        0.46153846153846156,
+        0.3076923076923077,
+        0.9090909090909091
+      ]
+    }
+  },
+  "predictions": [
+    {
+      "run_id": "7adb04ff0b43870c",
+      "task": "generative",
+      "sample_id": "19_5",
+      "prompt": "[{\"role\": \"system\", \"content\": \"You are simulating ATC communications at Conroe North Houston Regional (KCXO), a Class D airport in the Gulf Coast region. Aircraft: Piper Archer, Callsign: N7465U. Scenario: vfr departure towered. Use standard FAA phraseology and readback/hearback procedures.\"}, {\"role\": \"user\", \"content\": \"[PILOT] Conroe North Houston Regional ground Archer november seven four six five uniform at the ramp with information alpha request vfr departure to the west\"}, {\"role\": \"assistant\", \"content\": \"[ATC_GROUND] Archer november seven four six five uniform Conroe North Houston Regional ground taxi to runway three two via alpha\"}, {\"role\": \"user\", \"content\": \"[PILOT] taxi to runway three two via alpha six five uniform\"}, {\"role\": \"user\", \"content\": \"[PILOT] Conroe North Houston Regional tower six five uniform holding short runway three two ready for departure\"}]",
+      "raw_output": "**[ATC_TOWER]** N7465A, Conroe North, this is Tower.  \n**[ATCN]** N7466X, cleared for VFR departure from Runway 32, clear weather, direct to the West. Hold short until cleared.  \n\n*(If the aircraft",
+      "parsed_answer": "**[ATC_TOWER]** N7465A, Conroe North, this is Tower.  \n**[ATCN]** N7466X, cleared for VFR departure from Runway 32, clear weather, direct to the West. Hold short until cleared.  \n\n*(If the aircraft",
+      "expected": "[ATC_TOWER] six five uniform runway three two cleared for takeoff wind zero three zero at eight",
+      "correct": false,
+      "score": 0.18604651162790697,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "f1_score",
+            "value": 0.18604651162790697,
+            "kind": "code",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "bleu",
+            "value": 2.2277604606094128e-07,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "rouge_l",
+            "value": 0.08888888888888889,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "chrf",
+            "value": 0.2605852725153971,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "wer",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "levenshtein",
+            "value": 0.2791878172588832,
+            "kind": "code",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "exact_match",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "critical_token_recall",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "phraseology_match",
+            "value": 0.25,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "length_ratio",
+            "value": 0.5666666666666667,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "7adb04ff0b43870c",
+      "task": "generative",
+      "sample_id": "9_4",
+      "prompt": "[{\"role\": \"system\", \"content\": \"You are simulating ATC communications at Conroe North Houston Regional (KCXO), a Class D airport in the Gulf Coast region. Aircraft: Beechcraft King Air, Callsign: N471L. Scenario: progressive taxi. Use standard FAA phraseology and readback/hearback procedures.\"}, {\"role\": \"user\", \"content\": \"[PILOT] Conroe North Houston Regional ground King Air november four seven one lima at the transient ramp with information delta unfamiliar with the airport request progressive taxi to runway one four\"}, {\"role\": \"assistant\", \"content\": \"[ATC_GROUND] King Air november four seven one lima Conroe North Houston Regional ground no problem progressive taxi to runway one four start by making a left turn on taxiway bravo\"}, {\"role\": \"user\", \"content\": \"[PILOT] left turn on alpha seven one lima\"}]",
+      "raw_output": "Alpha seven one lima left turn complete taxis to runway four\n\n[ATC_AIR] Alpha seven one lima runway four cleared taxi out\n\n[PIL OT] Taxiing out from runway four ready to proceed",
+      "parsed_answer": "Alpha seven one lima left turn complete taxis to runway four\n\n[ATC_AIR] Alpha seven one lima runway four cleared taxi out\n\n[PIL OT] Taxiing out from runway four ready to proceed",
+      "expected": "[ATC_GROUND] seven one lima continue on alpha turn right on golf",
+      "correct": false,
+      "score": 0.23809523809523805,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "f1_score",
+            "value": 0.23809523809523805,
+            "kind": "code",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "bleu",
+            "value": 0.0001312357810004856,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "rouge_l",
+            "value": 0.19047619047619047,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "chrf",
+            "value": 0.24115377406650718,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "wer",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "levenshtein",
+            "value": 0.22033898305084743,
+            "kind": "code",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "exact_match",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "critical_token_recall",
+            "value": 0.8,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "phraseology_match",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "length_ratio",
+            "value": 0.375,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "7adb04ff0b43870c",
+      "task": "generative",
+      "sample_id": "26_4",
+      "prompt": "[{\"role\": \"system\", \"content\": \"You are simulating ATC communications at Lake Charles Regional (KLCH), a Class D airport in the Gulf Coast region. Aircraft: Cessna 210, Callsign: N439T. Scenario: progressive taxi. Use standard FAA phraseology and readback/hearback procedures.\"}, {\"role\": \"user\", \"content\": \"[PILOT] Lake Charles Regional ground Centurion november four three niner tango at the transient ramp with information papa unfamiliar with the airport request progressive taxi to runway five\"}, {\"role\": \"assistant\", \"content\": \"[ATC_GROUND] Centurion november four three niner tango Lake Charles Regional ground no problem progressive taxi to runway five start by making a left turn on taxiway charlie\"}, {\"role\": \"user\", \"content\": \"[PILOT] left turn on charlie three niner tango\"}]",
+      "raw_output": "[CENTURION_NAVIGATOR] Left turn on Charlie Taxiway, N439T\n\n[CENTURINON_TAXI] N439T, confirm left turn on Charlie taxway \n\n[CENTURYON_TAX] N439t, proceed to make left turn on",
+      "parsed_answer": "[CENTURION_NAVIGATOR] Left turn on Charlie Taxiway, N439T\n\n[CENTURINON_TAXI] N439T, confirm left turn on Charlie taxway \n\n[CENTURYON_TAX] N439t, proceed to make left turn on",
+      "expected": "[ATC_GROUND] three niner tango continue on delta turn right on foxtrot",
+      "correct": false,
+      "score": 0.1764705882352941,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "f1_score",
+            "value": 0.1764705882352941,
+            "kind": "code",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "bleu",
+            "value": 6.009638585283719e-10,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "rouge_l",
+            "value": 0.1764705882352941,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "chrf",
+            "value": 0.15316391388430775,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "wer",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "levenshtein",
+            "value": 0.20809248554913296,
+            "kind": "code",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "exact_match",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "critical_token_recall",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "phraseology_match",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "length_ratio",
+            "value": 0.46153846153846156,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "7adb04ff0b43870c",
+      "task": "generative",
+      "sample_id": "46_4",
+      "prompt": "[{\"role\": \"system\", \"content\": \"You are simulating ATC communications at Lake Charles Regional (KLCH), a Class D airport in the Gulf Coast region. Aircraft: Piper Cherokee, Callsign: N1967U. Scenario: progressive taxi. Use standard FAA phraseology and readback/hearback procedures.\"}, {\"role\": \"user\", \"content\": \"[PILOT] Lake Charles Regional ground Cherokee november one niner six seven uniform at the transient ramp with information quebec unfamiliar with the airport request progressive taxi to runway two three\"}, {\"role\": \"assistant\", \"content\": \"[ATC_GROUND] Cherokee november one niner six seven uniform Lake Charles Regional ground no problem progressive taxi to runway two three start by making a left turn on taxiway bravo\"}, {\"role\": \"user\", \"content\": \"[PILOT] left turn on charlie six seven uniform\"}]",
+      "raw_output": "[CLEAR TO TAKEOFF] Lake Charles regional clear to takeoff runway two four wind from one hundred twenty degrees at ten knots\n\n[PILOTE] Takeoff Charlie Six Seven Uniform\n\n[ATC_TAKEOFF] Runway cleared takeoff Charlie Two Four wind one hundred twenty",
+      "parsed_answer": "[CLEAR TO TAKEOFF] Lake Charles regional clear to takeoff runway two four wind from one hundred twenty degrees at ten knots\n\n[PILOTE] Takeoff Charlie Six Seven Uniform\n\n[ATC_TAKEOFF] Runway cleared takeoff Charlie Two Four wind one hundred twenty",
+      "expected": "[ATC_GROUND] six seven uniform continue on delta turn right on echo",
+      "correct": false,
+      "score": 0.12244897959183672,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "f1_score",
+            "value": 0.12244897959183672,
+            "kind": "code",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "bleu",
+            "value": 1.000000000000001e-12,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "rouge_l",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "chrf",
+            "value": 0.1338491500614454,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "wer",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "levenshtein",
+            "value": 0.16260162601626016,
+            "kind": "code",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "exact_match",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "critical_token_recall",
+            "value": 0.6,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "phraseology_match",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "length_ratio",
+            "value": 0.3076923076923077,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    },
+    {
+      "run_id": "7adb04ff0b43870c",
+      "task": "generative",
+      "sample_id": "47_6",
+      "prompt": "[{\"role\": \"system\", \"content\": \"You are simulating ATC communications at Keesler AFB / Biloxi (KBIX), a Class D airport in the Gulf Coast region. Aircraft: Piper Seminole, Callsign: N4132T. Scenario: progressive taxi. Use standard FAA phraseology and readback/hearback procedures.\"}, {\"role\": \"user\", \"content\": \"[PILOT] Keesler AFB / Biloxi ground Seminole november four one three two tango at the transient ramp with information kilo unfamiliar with the airport request progressive taxi to runway two niner\"}, {\"role\": \"assistant\", \"content\": \"[ATC_GROUND] Seminole november four one three two tango Keesler AFB / Biloxi ground no problem progressive taxi to runway two niner start by making a left turn on taxiway alpha\"}, {\"role\": \"user\", \"content\": \"[PILOT] left turn on charlie three two tango\"}, {\"role\": \"assistant\", \"content\": \"[ATC_GROUND] three two tango continue on delta turn right on echo\"}, {\"role\": \"user\", \"content\": \"[PILOT] right on echo three two tango\"}]",
+      "raw_output": "[CALLSIGN_KIESLERAFBBiloxi] Echo Charlie\n\n[AIRCRAFT_ID_PIPER_SEMINOLE_N4132T] Echo Charlie, progress made.\n\n[CALLSIX_KIESleraFBi] Proceed to Runway Two Nineteen",
+      "parsed_answer": "[CALLSIGN_KIESLERAFBBiloxi] Echo Charlie\n\n[AIRCRAFT_ID_PIPER_SEMINOLE_N4132T] Echo Charlie, progress made.\n\n[CALLSIX_KIESleraFBi] Proceed to Runway Two Nineteen",
+      "expected": "[ATC_GROUND] three two tango hold short runway two niner contact tower on one three three point five seven five when ready",
+      "correct": false,
+      "score": 0.11428571428571427,
+      "choice_likelihoods": null,
+      "context": {},
+      "metadata": {
+        "scores": [
+          {
+            "name": "f1_score",
+            "value": 0.11428571428571427,
+            "kind": "code",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "bleu",
+            "value": 6.06530659712634e-13,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "rouge_l",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "chrf",
+            "value": 0.13408956351869944,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "wer",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "levenshtein",
+            "value": 0.14375000000000004,
+            "kind": "code",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "exact_match",
+            "value": 0.0,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "critical_token_recall",
+            "value": 0.08333333333333333,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "phraseology_match",
+            "value": 0.3333333333333333,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          },
+          {
+            "name": "length_ratio",
+            "value": 0.9090909090909091,
+            "kind": "benchmark",
+            "data_type": "numeric",
+            "direction": "maximize",
+            "weight": 1.0,
+            "source": "sdk"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "num_fewshot": null,
+    "limit": null,
+    "seed": null,
+    "trials": 1,
+    "batch_size": "auto",
+    "concurrency": 1,
+    "split": null,
+    "temperature": 0.0,
+    "top_p": null,
+    "top_k": null,
+    "max_tokens": null,
+    "stop_sequences": null,
+    "presence_penalty": null,
+    "frequency_penalty": null,
+    "num_completions": null,
+    "best_of": null,
+    "timeout": null,
+    "max_retries": 3,
+    "retry_delay": 1.0,
+    "judge_model": null,
+    "judge_prompt_version": null,
+    "track_performance": true,
+    "chat_template_kwargs": null,
+    "extra": {},
+    "failed_as_zero": false
+  },
+  "model_spec": "<auditkit.model.CallableModel object at 0x000001A5C49593D0>",
+  "errors": [],
+  "unscored": {},
+  "failed_count": 0,
+  "experiment_name": "atc_base",
+  "tags": [],
+  "perf": {
+    "latency_ms": {
+      "count": 1,
+      "mean": 665999.6822000103,
+      "min": 665999.6822000103,
+      "max": 665999.6822000103,
+      "p50": 665999.6822000103,
+      "p95": 665999.6822000103,
+      "p99": 665999.6822000103,
+      "std": 0.0
+    },
+    "throughput": {
+      "rps": 0.007507511089920341,
+      "total_requests": 5,
+      "total_time_ms": 665999.6822000103,
+      "output_tokens_per_sec": 0.0,
+      "total_tokens_per_sec": 0.0
+    }
+  },
+  "model_size": {
+    "is_local": false,
+    "model_name": "atc_base-b00983042211454e9039d06d4c633f26"
+  },
+  "token_usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0
+  },
+  "metadata": {
+    "inputs": []
+  }
+}
